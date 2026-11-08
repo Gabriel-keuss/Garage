@@ -1,0 +1,5 @@
+SUIVI DES PIECES A COMMANDER
+
+Ajoutez une ligne par pièce avec référence, véhicule, fournisseur, prix, quantité et dates de commande/livraison. Changez l’état directement dans le tableau. Vous pouvez rechercher les pièces et exporter la liste en CSV.
+
+Les informations sont enregistrées dans le stockage local du navigateur. Elles ne sont ni synchronisées ni sauvegardées sur un serveur. Exportez régulièrement une copie CSV.

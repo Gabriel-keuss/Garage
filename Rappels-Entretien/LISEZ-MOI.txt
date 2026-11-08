@@ -1,0 +1,7 @@
+RAPPELS D'ENTRETIEN — ASSISTANT GARAGE
+
+Pour démarrer, ouvrez index.html dans votre navigateur.
+
+Cet outil prépare un message de rappel pour une révision ou vidange, un changement de pneus, un contrôle technique ou un autre entretien. Il peut inclure une date d’échéance, un kilométrage et une précision. Le message peut être copié ou utilisé pour préparer un e-mail.
+
+Cette version ne programme pas de rappel, ne se connecte pas à un calendrier, n’envoie pas de message et ne conserve pas les informations. Le garage doit vérifier le texte et l’envoyer lui-même.

@@ -1,0 +1,7 @@
+SUIVI DES REPARATIONS — ASSISTANT GARAGE
+
+Pour démarrer, ouvrez index.html dans votre navigateur.
+
+Cet outil prépare un message pour trois étapes : diagnostic en cours, accord du client nécessaire et véhicule prêt. Pour une demande d’accord, vous pouvez ajouter les travaux proposés et le montant du devis. Le message peut ensuite être copié ou utilisé pour préparer un e-mail.
+
+Cette version ne se connecte pas à la boîte mail, n’envoie pas de message et ne conserve pas les informations. Le garage doit vérifier le texte et l’envoyer lui-même.

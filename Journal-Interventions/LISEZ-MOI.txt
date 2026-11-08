@@ -1,0 +1,5 @@
+JOURNAL DES INTERVENTIONS
+
+Ajoutez une fiche après chaque intervention avec la date, l’immatriculation, le véhicule, les travaux et, si utile, le client et le kilométrage. La recherche filtre l’historique. Le bouton d’export crée une copie CSV.
+
+Les fiches sont enregistrées dans le stockage local du navigateur sur cet ordinateur. Elles ne sont ni synchronisées ni sauvegardées sur un serveur. Exportez le CSV pour conserver une copie. Toute personne utilisant ce profil de navigateur peut accéder aux fiches.

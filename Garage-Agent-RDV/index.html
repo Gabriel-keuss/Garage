@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a2a">
+  <title>Atelier — prise de rendez-vous</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Atelier accueil"><span class="brand-mark">A</span><span>ATELIER<span class="brand-sub">ASSISTANT GARAGE</span></span></a>
+      <span class="local-badge"><i></i> Assistant disponible</span>
+    </header>
+
+    <section class="intro">
+      <div class="eyebrow">PRISE DE RENDEZ-VOUS</div>
+      <h1>Bonjour, que faut-il<br>prévoir pour votre voiture&nbsp;?</h1>
+      <p>Je recueille les informations utiles pour préparer votre demande. Le garage vous confirmera ensuite le créneau.</p>
+    </section>
+
+    <section class="booking" aria-label="Assistant de prise de rendez-vous">
+      <div class="chat-head"><div class="avatar">A</div><div><strong>Assistant Atelier</strong><span>Prise de rendez-vous</span></div><button id="reset" class="reset" type="button" title="Recommencer">↻</button></div>
+      <div id="conversation" class="conversation" aria-live="polite"></div>
+      <form id="reply-form" class="reply-form" autocomplete="off">
+        <label class="sr-only" for="reply">Votre réponse</label>
+        <input id="reply" name="reply" placeholder="Écrivez votre réponse…" required>
+        <button aria-label="Envoyer" type="submit">➜</button>
+      </form>
+      <div class="chat-foot">Ne partagez pas d’informations bancaires. Vos réponses restent dans cette page.</div>
+    </section>
+    <footer>Une demande n’est pas une réservation confirmée. Le garage vous recontactera.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

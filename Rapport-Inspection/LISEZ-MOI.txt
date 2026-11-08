@@ -1,0 +1,5 @@
+RAPPORT D'INSPECTION VISUELLE
+
+Ouvrez index.html, saisissez les informations et les observations du mécanicien, puis cliquez sur « Préparer le rapport ». Vous pouvez copier le texte ou imprimer / enregistrer en PDF.
+
+Le rapport organise les observations saisies : il ne réalise pas de diagnostic automatique. Le mécanicien doit vérifier et valider le contenu avant de le remettre au client.

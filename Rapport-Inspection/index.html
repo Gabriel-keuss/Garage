@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rapport d’inspection — Garage-Projet</title><link rel="stylesheet" href="styles.css"></head>
+<body><main class="page">
+  <header><a class="brand" href="../Creer-Devis/index.html"><span class="mark">G</span><span>GARAGE-PROJET<small>RAPPORT D’INSPECTION</small></span></a><span class="badge">Outil local</span></header>
+  <section class="intro"><span class="kicker">ATELIER · COMPTE RENDU CLIENT</span><h1>Une inspection<br><em>facile à comprendre.</em></h1><p>Organisez les observations du mécanicien en un rapport clair, à relire avant de le remettre au client.</p></section>
+  <div class="layout">
+    <form id="form" class="card editor">
+      <h2>Informations du véhicule</h2>
+      <div class="grid"><label>Nom du client<input id="customer" placeholder="Nom du client"></label><label>Véhicule<input id="vehicle" placeholder="Marque et modèle"></label><label>Immatriculation<input id="plate" placeholder="AB-123-CD"></label><label>Date de l’inspection<input id="date" type="date"></label></div>
+      <label>État général constaté<select id="level"><option value="attention">Point à traiter</option><option value="monitor">À surveiller</option><option value="ok">Aucun point particulier relevé</option></select></label>
+      <label>Observations du mécanicien *<textarea id="observations" required rows="5" placeholder="Ex. plaquettes avant proches de la limite, pneus arrière usés à l’intérieur"></textarea></label>
+      <label>Conseil ou prochaine étape<textarea id="recommendation" rows="3" placeholder="Ex. prévoir le remplacement des plaquettes prochainement"></textarea></label>
+      <button class="primary" type="submit">Préparer le rapport <span>→</span></button>
+    </form>
+    <section class="card preview"><div class="sectionhead"><h2>Rapport client</h2><span class="draft">BROUILLON</span></div><article id="report" class="paper"><p class="paperbrand">GARAGE-PROJET</p><h2>Compte rendu d’inspection visuelle</h2><p id="outIntro" class="muted">Complétez le formulaire pour préparer le rapport.</p><div class="rule"></div><h3>Éléments observés</h3><p id="outObs" class="placeholder">Les observations apparaîtront ici.</p><div id="recWrap" hidden><h3>Conseil du garage</h3><p id="outRec"></p></div><p id="outStatus" class="status"></p><p class="disclaimer">Ce compte rendu reprend les observations saisies par le mécanicien. Il ne remplace pas un diagnostic complet ni une vérification des éléments non inspectés.</p><div class="sign">Votre garage</div></article><div class="actions"><button id="copy" type="button" disabled>Copier le rapport</button><button id="print" type="button" disabled>Imprimer / PDF</button></div></section>
+  </div><footer>Les données restent dans cette page et ne sont pas sauvegardées.</footer>
+</main><script src="app.js"></script></body></html>

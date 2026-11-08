@@ -1,0 +1,5 @@
+CLOTURE DE JOURNEE
+
+Saisissez une intervention, une attente ou un rappel par ligne, puis cliquez sur « Générer le compte rendu ». Le résumé peut être copié ou imprimé / enregistré en PDF.
+
+Cette page ne sauvegarde pas les saisies. Pensez à copier ou imprimer le compte rendu avant de fermer la page.

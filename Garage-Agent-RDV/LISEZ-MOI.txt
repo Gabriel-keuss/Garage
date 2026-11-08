@@ -1,0 +1,9 @@
+ASSISTANT DE PRISE DE RENDEZ-VOUS — GARAGE
+
+Démarrage : double-cliquez sur index.html. Aucun compte, abonnement ou installation n’est requis.
+
+L’assistant recueille le nom, un moyen de contact, le véhicule, le motif et les disponibilités. Il produit un récapitulatif que l’on peut copier ou utiliser pour préparer un e-mail.
+
+Limite actuelle : cette version ne transmet pas automatiquement la demande au garage et ne réserve pas de créneau. Le garage doit confirmer le rendez-vous. Les réponses ne sont pas envoyées ni sauvegardées par cette page.
+
+Pour la personnaliser, remplacez « Atelier » dans index.html par le nom du garage. La page charge les polices DM Sans et Manrope depuis Google Fonts si Internet est disponible ; elle utilise des polices de remplacement si ce n’est pas le cas.

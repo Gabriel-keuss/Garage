@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b34">
+  <title>Préparer un devis — Garage-Projet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="mark">G</span><span>GARAGE-PROJET<small>OUTIL DE PRÉPARATION DE DEVIS</small></span></a>
+      <span class="local-badge"><i></i> Utilisation locale</span>
+    </header>
+
+    <section class="intro">
+      <p class="kicker">ATELIER · ADMINISTRATION</p>
+      <h1>Préparer un devis<br><em>en quelques minutes.</em></h1>
+      <p>Renseignez le client, le véhicule et les prestations. Le devis se met à jour automatiquement et peut être imprimé ou enregistré en PDF.</p>
+    </section>
+
+    <div class="layout">
+      <section class="editor" aria-label="Informations du devis">
+        <div class="section-heading"><span>01</span><div><h2>Informations</h2><p>Garage, client et véhicule</p></div></div>
+        <div class="fields two">
+          <label>Nom du garage<input id="garage" placeholder="Ex. Garage Martin"></label>
+          <label>Téléphone ou e-mail<input id="garageContact" placeholder="Ex. 01 23 45 67 89"></label>
+          <label>Nom du client<input id="customer" placeholder="Ex. Camille Dupont"></label>
+          <label>Contact du client <span>(facultatif)</span><input id="customerContact" placeholder="E-mail ou téléphone"></label>
+          <label>Véhicule<input id="vehicle" placeholder="Ex. Peugeot 208"></label>
+          <label>Immatriculation <span>(facultatif)</span><input id="registration" placeholder="Ex. AB-123-CD"></label>
+          <label>Date du devis<input id="quoteDate" type="date"></label>
+          <label>Valable jusqu’au <span>(facultatif)</span><input id="validUntil" type="date"></label>
+        </div>
+
+        <div class="section-heading line-heading"><span>02</span><div><h2>Pièces et main-d’œuvre</h2><p>Ajoutez chaque poste du devis</p></div></div>
+        <div id="lines" class="lines"></div>
+        <button id="addLine" class="add-line" type="button">＋ Ajouter une ligne</button>
+
+        <div class="tax-row">
+          <label for="vat">TVA appliquée</label>
+          <select id="vat"><option value="20">20 %</option><option value="10">10 %</option><option value="5.5">5,5 %</option><option value="0">0 %</option></select>
+        </div>
+        <label class="notes-label">Notes ou conditions <span>(facultatif)</span><textarea id="notes" rows="3" placeholder="Ex. Délai estimé : 2 jours ouvrés."></textarea></label>
+
+        <div class="editor-actions"><button id="print" type="button" class="primary">Imprimer / enregistrer en PDF <span>→</span></button><button id="reset" type="button" class="reset">Effacer le formulaire</button></div>
+        <p class="local-note">Les données restent dans cette page et ne sont pas sauvegardées.</p>
+      </section>
+
+      <section class="preview" aria-label="Aperçu du devis">
+        <div class="preview-bar"><div><span class="preview-dot"></span><strong>Aperçu du devis</strong></div><span class="draft">BROUILLON</span></div>
+        <article id="document" class="document">
+          <div class="doc-top"><div><div id="outGarage" class="out-garage">Nom du garage</div><div id="outGarageContact" class="muted">Coordonnées du garage</div></div><div class="quote-label">DEVIS<small id="outNumber"></small></div></div>
+          <div class="doc-rule"></div>
+          <div class="doc-columns"><div><span class="caption">CLIENT</span><strong id="outCustomer">Nom du client</strong><span id="outCustomerContact" class="muted"></span></div><div><span class="caption">VÉHICULE</span><strong id="outVehicle">Véhicule</strong><span id="outRegistration" class="muted"></span></div></div>
+          <div class="dates"><span id="outDate"></span><span id="outValidity"></span></div>
+          <table><thead><tr><th>DÉSIGNATION</th><th>QTÉ</th><th>PRIX UNIT. HT</th><th>TOTAL HT</th></tr></thead><tbody id="outLines"></tbody></table>
+          <div class="totals"><div><span>Total HT</span><strong id="outHT">0,00 €</strong></div><div><span>TVA (<b id="outVatRate">20</b> %)</span><strong id="outVat">0,00 €</strong></div><div class="grand"><span>Total TTC</span><strong id="outTTC">0,00 €</strong></div></div>
+          <div id="outNotesWrap" class="out-notes" hidden><span class="caption">NOTES</span><p id="outNotes"></p></div>
+          <div class="approval">Devis estimatif à vérifier et valider par le garage avant transmission au client.</div>
+          <div class="signature"><span>Bon pour accord — date et signature du client</span><i></i></div>
+        </article>
+        <p class="preview-hint">Vérifiez les informations et le taux de TVA avant de transmettre le devis.</p>
+      </section>
+    </div>
+    <footer>Outil local gratuit · Aucun compte ni abonnement requis</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

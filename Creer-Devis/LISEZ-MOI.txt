@@ -1,0 +1,5 @@
+CREER UN DEVIS — GARAGE-PROJET
+
+Ouvrez index.html dans un navigateur. Renseignez les informations du garage, du client et du véhicule, puis ajoutez une ligne par pièce ou prestation. Les totaux HT, TVA et TTC sont calculés automatiquement. Le bouton « Imprimer / enregistrer en PDF » ouvre la fenêtre d’impression du navigateur ; choisissez ensuite « Enregistrer en PDF » si cette option est disponible.
+
+Cette version est un outil local de préparation : elle n’enregistre ni n’envoie les données. Le document porte la mention « devis estimatif » et doit être vérifié par le garage avant transmission. Vérifiez également le taux de TVA applicable avant d’utiliser le document.

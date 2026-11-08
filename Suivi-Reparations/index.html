@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b34">
+  <title>Suivi des réparations — Atelier</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <a class="brand" href="../index.html"><span class="mark">A</span><span>ATELIER<small>ASSISTANT GARAGE</small></span></a>
+      <span class="badge"><i></i> Outil du garage</span>
+    </header>
+
+    <section class="intro">
+      <p class="kicker">ESPACE ÉQUIPE · SUIVI CLIENT</p>
+      <h1>Donnez des nouvelles,<br><em>simplement.</em></h1>
+      <p>Choisissez l’étape de la réparation et préparez un message clair pour votre client.</p>
+    </section>
+
+    <section class="workspace">
+      <form id="message-form" class="form-panel">
+        <div class="panel-title"><span class="step">01</span><div><h2>Informations du véhicule</h2><p>Les champs avec * sont nécessaires.</p></div></div>
+
+        <label for="client">Prénom du client *</label>
+        <input id="client" name="client" placeholder="Ex. Camille" required>
+
+        <label for="vehicle">Véhicule *</label>
+        <input id="vehicle" name="vehicle" placeholder="Ex. Peugeot 208" required>
+
+        <label for="status">Étape de la réparation *</label>
+        <select id="status" name="status" required>
+          <option value="diagnostic">Diagnostic en cours</option>
+          <option value="approval">Accord nécessaire</option>
+          <option value="ready">Véhicule prêt</option>
+        </select>
+
+        <div id="approval-fields" class="conditional" hidden>
+          <label for="work">Travaux à autoriser</label>
+          <input id="work" name="work" placeholder="Ex. remplacement des plaquettes de frein">
+          <label for="estimate">Montant du devis (€)</label>
+          <input id="estimate" name="estimate" type="number" min="0" step="0.01" placeholder="Ex. 245,00">
+        </div>
+
+        <label for="detail">Précision ou prochaine étape <span class="optional">(facultatif)</span></label>
+        <textarea id="detail" name="detail" rows="3" placeholder="Ex. Nous vous rappelons dès que le diagnostic est terminé."></textarea>
+
+        <button class="primary" type="submit">Préparer le message <span>→</span></button>
+      </form>
+
+      <section class="preview-panel" aria-label="Aperçu du message">
+        <div class="panel-title"><span class="step pale">02</span><div><h2>Message au client</h2><p>Relisez-le avant de l’envoyer.</p></div></div>
+        <div class="message-card">
+          <div class="message-meta"><span class="bubble-icon">✉</span><span><b>Brouillon de message</b><small>Le garage garde la main sur l’envoi</small></span></div>
+          <div id="output" class="output placeholder">Le message personnalisé apparaîtra ici.</div>
+        </div>
+        <div class="actions">
+          <button id="copy" class="secondary" type="button" disabled>Copier le message</button>
+          <button id="email" class="secondary" type="button" disabled>Préparer un e-mail</button>
+        </div>
+        <p id="notice" class="notice" aria-live="polite">Aucun message n’est envoyé automatiquement.</p>
+      </section>
+    </section>
+    <footer>Les informations saisies restent dans cette page et ne sont pas enregistrées.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
